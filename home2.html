@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/home2.css">
+</head>
+
+<body>
+    <div class="title">
+        <img src="./image/index/logo.jpg" alt="">
+        <div class="tit_right">
+            <img src="./image/index/my.jpg" alt="">
+            <img src="./image/index/xiazai.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div class="content">
+        <p><span>首页</span>>找回密码 </p>
+    </div>
+    <div class="content">
+        <div class="con">
+            <input type="text" placeholder="请输入手机号码">
+            <div>发送验证码</div>
+        </div>
+
+    </div>
+    <div class="content">
+        <input type="text" placeholder="请输入短信中的验证码">
+    </div>
+    <div class="content">
+        <input type="password" placeholder="请输入新密码">
+    </div>
+    <div class="content">
+        <input type="password" placeholder="请确认密码">
+    </div>
+
+
+    <div id='Btn'>
+        提交
+    </div>
+
+</body>
+
+</html>
+<script>
+    function setRem() {
+        var uiw = 375,
+            winw = document.documentElement.clientWidth || document.body.clientWidth;
+        document.documentElement.style.fontSize = (winw / uiw) * 10 + 'px';
+    }
+    setRem();
+    window.onresize = setRem;
+</script>

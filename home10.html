@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/home10.css">
+</head>
+
+<body>
+    <div class="title">
+        <div class="tit_right">
+            <img src="./image/index/my.jpg" alt="">
+            <img src="./image/index/xiazai.jpg" alt="">
+        </div>
+
+        <div class="tit_bot">
+            <img src="./image/my/urse2.png" alt="">
+            <div>登录</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="nav">
+            <div>
+                <img src="./image/my/icon1.png" alt="">
+                <span>我关注的房源</span>
+            </div>
+            <span>></span>
+        </div>
+        <div class="nav">
+            <div>
+                <img src="./image/my/icon2.png" alt="">
+                <span>我关注的小区</span>
+            </div>
+            <span>></span>
+        </div>
+        <div class="nav">
+            <div>
+                <img src="./image/my/icon3.png" alt="">
+                <span>我关注的新房</span>
+            </div>
+
+            <span>></span>
+        </div>
+        <div class="nav">
+            <div>
+                <img src="./image/my/icon4.png" alt="">
+                <span>我的看房记录</span>
+            </div>
+
+            <span>></span>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function setRem() {
+        var uiw = 375,
+            winw = document.documentElement.clientWidth || document.body.clientWidth;
+        document.documentElement.style.fontSize = (winw / uiw) * 10 + 'px';
+    }
+    setRem();
+    window.onresize = setRem;
+</script>
