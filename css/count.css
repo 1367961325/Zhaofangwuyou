@@ -1,0 +1,43 @@
+.base {
+  width: 100%;
+  height: 15.5rem;
+  background-color: #303332;
+}
+.base .base_one {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  color: #a1a1a1;
+  box-sizing: border-box;
+  padding: 1.4rem 0rem;
+  border-bottom: 0.1rem solid #666666;
+}
+.base .base_two {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+.base .base_two div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  color: #9e9e9e;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+.base .base_two div .left {
+  display: flex;
+  flex-direction: column;
+}
+.base .base_two div img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.base .base_three {
+  width: 100%;
+  font-size: 1.4rem;
+  color: #9e9e9e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
