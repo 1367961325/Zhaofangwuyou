@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/home2.css">
+    <script src="./js/touch-0.2.14.min.js"></script>
+    <script src="./js/zipto.js"></script>
 </head>
 
 <body>
@@ -25,7 +27,8 @@
     <div class="content">
         <div class="con">
             <input type="text" placeholder="请输入手机号码">
-            <div>发送验证码</div>
+            <div id="authCode">发送验证码</div>
+            <div class="down"></div>
         </div>
 
     </div>
@@ -55,4 +58,29 @@
     }
     setRem();
     window.onresize = setRem;
+</script>
+
+<script>
+    $(function(){
+        touch.on(authCode,'tap',function(){
+            var authCode=$('#authCode');
+            var down=$('.down');
+            var a=30;
+            authCode.hide();
+            down.show();
+
+            var id=setInterval(function(){
+                a-=1;
+                if(a<=-1){
+                    authCode.show();
+                    down.hide();
+                    clearInterval(id);
+
+                }else{
+                    down.html(a+'后重新发送');
+                }
+            },1000)
+
+        })
+    })
 </script>

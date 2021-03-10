@@ -36,7 +36,8 @@
     <div class="content cont_">
         <div class="con">
             <input type="text" placeholder="请输入手机号码">
-            <div>发送验证码</div>
+            <div id="authCode">发送验证码</div>
+            <div class="down"></div>
         </div>
         <div> <input type="text" placeholder="请输入短信中的验证码"></div>
     </div>
@@ -78,5 +79,32 @@
             $(this).attr('class', 'active');
             sDiv.eq($(this).index()).css('display', 'block');
         })
+
+
+        //短信倒计时
+    $(function(){
+        touch.on(authCode,'tap',function(){
+            var authCode=$('#authCode');
+            var down=$('.down');
+            var a=30;
+            authCode.hide();
+            down.show();
+
+            var id=setInterval(function(){
+                a-=1;
+                if(a<=-1){
+                    authCode.show();
+                    down.hide();
+                    clearInterval(id);
+
+                }else{
+                    down.html(a+'后重新发送');
+                }
+            },1000)
+
+        })
+    })
     })
 </script>
+
+

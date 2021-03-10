@@ -63,6 +63,9 @@ body {
   line-height: 3rem;
   border: 0.1rem solid #8f8f8f;
 }
+.content .con .down {
+  display: none;
+}
 #Btn {
   width: 90%;
   height: 6rem;
