@@ -149,6 +149,11 @@ html {
 .container .con_list .con_p p {
   font-size: 1.8rem;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 文字超出后的展示效果 */
+  white-space: nowrap;
+  /* 强制文字不换行 */
 }
 .container .con_list .con_p .d1 {
   font-size: 1.4rem;
